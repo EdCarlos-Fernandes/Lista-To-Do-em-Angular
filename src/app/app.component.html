@@ -1,0 +1,26 @@
+<!--<p>total de nomes {{nomes.length}}</p>-->
+<!--<p>nome principal {{nomePrincipal}}</p>-->
+
+
+<!--<ul class="lista">-->
+<!--  <li *ngFor="let item of nomes" [style.color]="corPrincipal" (click)="click(item)">-->
+<!--    {{item.id}} - {{item.nome}} - {{item.idade}} - {{item.maturidade()}}-->
+<!--  </li>-->
+<!--</ul>-->
+<!--<input type="text" #nomeInput (keyup.enter)="trocarNome(nomeInput.value); limparInput(nomeInput)" >-->
+<!--<br />-->
+<!--<button (click)="trocarCor('#0000ff')">Azul</button>-->
+<!--<button (click)="trocarCor('#ff0000')">Vermelho</button>-->
+
+
+<h1>{{titulo}}</h1>
+<br />
+<br />
+<input type="text" #nomeInput (keyup.enter)="adicionar(nomeInput)">
+<button type="submit" (click)="adicionar(nomeInput)">Adicionar</button>
+<br />
+<ul>
+  <li *ngFor="let nome of tarefas.slice(1)">
+    {{nome.tarefa}}
+  </li>
+</ul>
